@@ -17,3 +17,16 @@ def lang(x):
         break
 
 lang("The cat jumped from the trash pile into another trash pile")
+
+def spaces(y,t):
+    y = ["CCC.."]
+    t = [".C.C.C"]
+    for i in t:
+        if "C" == [0,1,2]:
+            print("3")
+        elif "C" == []:
+        
+spaces("CCC..",".C.C.C")    
+
+# items = [{"name": "food", "price": 50, "department": "foodfood", "description": "hi"}
+#          {"name: "ntofood", }]
