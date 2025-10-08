@@ -1,4 +1,4 @@
-def lang(x):
+""" def lang(x):
     t_count = []
     s_count = []
 
@@ -16,17 +16,18 @@ def lang(x):
             print("Probably French")
         break
 
-lang("The cat jumped from the trash pile into another trash pile")
+lang("The cat jumped from the trash pile into another trash pile") """
 
 def spaces(y,t):
-    y = ["CCC.."]
-    t = [".C.C.C"]
-    for i in t:
-        if "C" == [0,1,2]:
-            print("3")
-        elif "C" == []:
-        
-spaces("CCC..",".C.C.C")    
+    occ = 0
+    for i in len(spaces):
+        if y[i] == "C" and t[i] == "C":
+            (y,t) = occ + 1
+    if y == t:
+        return occ
+    
+spaces("CC..C", ".C.C.")
 
-# items = [{"name": "food", "price": 50, "department": "foodfood", "description": "hi"}
-#          {"name: "ntofood", }]
+# item = {
+
+# },
