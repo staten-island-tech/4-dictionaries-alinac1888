@@ -18,16 +18,36 @@
 
 lang("The cat jumped from the trash pile into another trash pile") """
 
-def spaces(y,t):
+""" def spaces(n,y,t):
     occ = 0
-    for i in len(spaces):
-        if y[i] == "C" and t[i] == "C":
-            (y,t) = occ + 1
-    if y == t:
-        return occ
-    
-spaces("CC..C", ".C.C.")
+    for i in range(n):
+        if (y[i] == "C" and t[i] == "C"):
+            occ += 1
+    return occ    
+print(spaces(5, "CC..C", ".C.C.")) """
 
-# item = {
+items = [
+    {
+        'name': 'pot',
+        "price": 100,
+        "department": "Pot",
+        "description": "yay"
+    }
+],
+[
+    {
+    "name":"pans",
+    "price": 20000000,
+    "department": "Pot",
+    "descrption": "pots and pans"
+    }
+]
 
-# },
+panpots = "pot"
+if panpots == "pot":
+    print(items['name']['pot'])
+
+""" lang = "english"
+if lang == "english":
+    print(e['name']['enlgush'])
+else: """
