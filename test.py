@@ -26,12 +26,12 @@ lang("The cat jumped from the trash pile into another trash pile") """
     return occ    
 print(spaces(5, "CC..C", ".C.C.")) """
 
-items = [
-    {
-        'name': 'pot',
-        "price": 100,
-        "department": "Pot",
-        "description": "yay"
+index = [
+    item_1 = {
+    "name": 'pot',
+    "price": 100,
+    "department": "Pot",
+    "description": "yay"
     }
 ],
 [
@@ -42,10 +42,12 @@ items = [
     "descrption": "pots and pans"
     }
 ]
+for index, in enumerate[0]["name"]:
+    print()
 
-panpots = "pot"
+""" panpots = "pot"
 if panpots == "pot":
-    print(items['name']['pot'])
+    print(index['name']['pot']) """
 
 """ lang = "english"
 if lang == "english":
