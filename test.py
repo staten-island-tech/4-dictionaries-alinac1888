@@ -16,9 +16,8 @@
             print("Probably French")
         break
 
-lang("The cat jumped from the trash pile into another trash pile") """
-
-""" def spaces(n,y,t):
+lang("The cat jumped from the trash pile into another trash pile")
+def spaces(n,y,t):
     occ = 0
     for i in range(n):
         if (y[i] == "C" and t[i] == "C"):
@@ -26,26 +25,20 @@ lang("The cat jumped from the trash pile into another trash pile") """
     return occ    
 print(spaces(5, "CC..C", ".C.C.")) """
 
-items = [
-    {
-        'name': 'pot',
+items = {
+    "pot":{
+        
         "price": 100,
         "department": "Pot",
         "description": "yay"
+    },
+    "pans":{
+        "price": 20000000,
+        "department": "Pot",
+        "description": "pots and pans"
     }
-],
-[
-    {
-    "name":"pans",
-    "price": 20000000,
-    "department": "Pot",
-    "descrption": "pots and pans"
-    }
-]
-
-panpots = "pot"
-if panpots == "pot":
-    print(items['name']['pot'])
+}
+print(items['name']['pot'])
 
 """ lang = "english"
 if lang == "english":
