@@ -24,48 +24,24 @@ def spaces(n,y,t):
             occ += 1
     return occ    
 print(spaces(5, "CC..C", ".C.C.")) """
-
-<<<<<<< HEAD
-index = [
-    item_1 = {
-    "name": 'pot',
-    "price": 100,
-    "department": "Pot",
-    "description": "yay"
-    }
-],
-[
-    {
-    "name":"pans",
-    "price": 20000000,
-    "department": "Pot",
-    "descrption": "pots and pans"
-    }
-]
-for index, in enumerate[0]["name"]:
-    print()
-
 """ panpots = "pot"
 if panpots == "pot":
     print(index['name']['pot']) """
-=======
-items = {
+
+items = [
     "pot":{
-        
         "price": 100,
         "department": "Pot",
         "description": "yay"
-    },
+    }
+    
     "pans":{
         "price": 20000000,
         "department": "Pot",
         "description": "pots and pans"
     }
-}
-print(items['name']['pot'])
->>>>>>> abff60880cb0b36cfcde6dda079394a50923afed
+]
+print(items[0]["price"])
 
-""" lang = "english"
-if lang == "english":
-    print(e['name']['enlgush'])
-else: """
+# for index, in enumerate[0][items]:
+#         print()
