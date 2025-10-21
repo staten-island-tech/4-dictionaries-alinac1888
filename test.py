@@ -28,39 +28,67 @@
 # if panpots == "pot":
 #     print(index['name']['pot'])
 
+# items = {
+#     "pot":{
+#         "price": 100,
+#         "department": "Pot",
+#         "description": "yay"
+#     },
+#     "pans":{
+#         "price": 20000000,
+#         "department": "Pot",
+#         "description": "pots and pans"
+#     },
+#     "cans": {
+#         "price": 200,
+#         "department": "Cans",
+#         "description": "not pots nor pans"
+#     },
+# }
 items = {
-    "pot":{
+    "name":{
+        "pot"
+      "0":{
         "price": 100,
         "department": "Pot",
         "description": "yay"
+          }
     },
-    "pans":{
+    "name":{
+        "pans"
+
+      "1":{
         "price": 20000000,
         "department": "Pot",
         "description": "pots and pans"
+        }
     },
-    "cans": {
-        "price": 200,
-        "department": "Cans",
-        "description": "not pots nor pans"
+    "name":{
+        "cans"
+    
+        "2": {
+            "price": 200,
+            "department": "Cans",
+            "description": "not pots nor pans"
+        }
     }
 }
+for index, item in enumerate(items):
+    print(index, ":", items["pot"])
+q = (input("What would you like to buy?"))
 
-print(items["pot"], ["pans"], ["cans"])
-def e():
-    co = (input("What would you like to buy?"))
-    cost = 0
-    
-    if co == "pots":
-        print(co)
-        cost += (items["pots"]["price"])
-    elif co == "pans":
-        print(co)
-        cost += (items["pans"]["price"])
-    else:
-        print(co)
-        cost += (items["cans"]["price"])
-e()
+if 
+
+# if co == "pots":
+#         print(co)
+#         cost += (items["pots"]["price"])
+#     elif co == "pans":
+#         print(co)
+#         cost += (items["pans"]["price"])
+#     else:
+#         print(co)
+#         cost += (items["cans"]["price"])
+# e()
 # print(items["pot"]["price"])
 # print(items["cans"]["price"])
 
