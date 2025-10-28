@@ -28,56 +28,32 @@
 # if panpots == "pot":
 #     print(index['name']['pot'])
 
-# items = {
-#     "pot":{
-#         "price": 100,
-#         "department": "Pot",
-#         "description": "yay"
-#     },
-#     "pans":{
-#         "price": 20000000,
-#         "department": "Pot",
-#         "description": "pots and pans"
-#     },
-#     "cans": {
-#         "price": 200,
-#         "department": "Cans",
-#         "description": "not pots nor pans"
-#     },
-# }
-items = {
-    "name":{
-        "pot"
-      "0":{
+items = (
+
+        [
+            "name": "pot",
         "price": 100,
         "department": "Pot",
         "description": "yay"
-          }
-    },
-    "name":{
-        "pans"
+        ],
 
-      "1":{
-        "price": 20000000,
-        "department": "Pot",
-        "description": "pots and pans"
-        }
-    },
-    "name":{
-        "cans"
-    
-        "2": {
-            "price": 200,
-            "department": "Cans",
-            "description": "not pots nor pans"
-        }
-    }
-}
+        [
+            "name": "cans",
+        "price": 200,
+        "department": "Cans",
+        "description": "not pots nor pans"]
+)
+
 for index, item in enumerate(items):
-    print(index, ":", items["pot"])
-q = (input("What would you like to buy?"))
+    print(index, ":" ,(items)["price"])
+    items[0]["price"]  
 
-if 
+
+        #     {"name": "cans",
+        # "price": 200,
+        # "department": "Cans",
+        # "description": "not pots nor pans"}
+
 
 # if co == "pots":
 #         print(co)
