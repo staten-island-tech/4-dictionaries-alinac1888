@@ -55,22 +55,25 @@ for index, item in enumerate(items):
         items[1]["name"]
 cart = []
 cost = 0
+choice = int(input("What would you like to buy?"))
+cart.append(items[choice])
+cost += items[choice]["price"]
+print(f"Added {items[choice]['name']} into cart")
 
-while cart != "done":
-    choice = input("What would you like to buy?")
-    cart.append(choice)
-    cost += ([choice]["price"])
-    print(f"Added", choice, "into cart")
+while True:
+    checkout = (input("Would you like to continue shopping? (Yes/No)"))
+    if checkout == "Yes":
+        choice = int(input("What else would you like to buy?"))
+        cart.append(items[choice])
+        cost += items[choice]["price"]
+        print(f"Added {items[choice]['name']} into cart")
+    if checkout == "No":
+         break
     
-    
-    # con = input("Do you wish to keep shopping?")
-    # if con == "yes":
+for item in cart: 
+    print(f'{item["name"]} ${int(item["price"])}')
+print(f"Total: ${cost}")
 
-    
-    # check = input("Are you done shopping?")
-    # if check 
-    
-    
 
 # class Calculator():
 #     def add(x,y):
