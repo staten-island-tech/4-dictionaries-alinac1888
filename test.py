@@ -53,27 +53,41 @@ items = [
 for index, item in enumerate(items):
         print(index, ":" ,(item)["name"])
         items[1]["name"]
-        
-choice = input("What would you like to buy?")
 cart = []
-cart.append(choice)
-print(f"Added", choice, "into cart")
+cost = 0
+
 while cart != "done":
-    if choice == "pots":
-        print[(item)("price")]
-    elif choice == "pans":
-        print[(item)("price")]
-        cost += (items["pans"]["price"])
-    else:
-        print(co)
-        cost += (items["cans"]["price"])
+    choice = input("What would you like to buy?")
+    cart.append(choice)
+    cost += ([choice]["price"])
+    print(f"Added", choice, "into cart")
+    
+    
+    # con = input("Do you wish to keep shopping?")
+    # if con == "yes":
 
+    
+    # check = input("Are you done shopping?")
+    # if check 
+    
+    
 
+# class Calculator():
+#     def add(x,y):
+#             print(x+y)
+#             return x+y
+#     def add_many(list):
+#           print(sum(list))
+#           return sum(list)
+# Calculator.add(15,5)      
 
-
-# e()
-# print(items["pot"]["price"])
-# print(items["cans"]["price"])
-
-# for index, in enumerate[0][items]:
-#         print()
+# class Hero:
+#       def _init_(self, name, money, inventory)
+#         self,name = name
+#         self.money = money
+#         self,inventory = inventory
+#       def buy(self, item):
+#         print(f"{self.name} purhcased {item} and has {self.inventory}")]
+#         names = Hero("Names", 0 , ["pencil"])
+#         print(names_.dict_)
+# names.buy("hi")
