@@ -51,7 +51,13 @@ items = [
              "name": "flan",
              "price": 200000000000,
              "department": "food food food",
-             "description": "you should buy a pan",
+             "description": "you should buy a pan"
+        },
+        {
+             "name": "PIBBL",
+             "price": 2832743287482743827483274837284732814,
+             "department": "PIBBL",
+             "description": "wash my bellay. clean my bellay"
         }
 
 ]
