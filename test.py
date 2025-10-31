@@ -29,7 +29,6 @@
 #     print(index['name']['pot'])
 
 items = [
-
         {
             "name": "pots",
         "price": 100,
@@ -42,17 +41,24 @@ items = [
             "department": "pots and pans",
             "description":"tans"
         },
-
         {
             "name": "cans",
         "price": 200,
-        "department": "Cans",
-        "description": "not pots nor pans"}
+        "department": "cans",
+        "description": "not pots nor pans"
+        },
+        {
+             "name": "flan",
+             "price": 200000000000,
+             "department": "food food food",
+             "description": "you should buy a pan",
+        }
+
 ]
 
 for index, item in enumerate(items):
-        print(index, ":" ,(item)["name"])
-        items[1]["name"]
+        print(index, ":" ,(item)["name"],"-" ,(item)["description"],"-", "in" ,(item)["department"])
+        items[0]["name"]
 cart = []
 cost = 0
 choice = int(input("What would you like to buy?"))
@@ -61,13 +67,13 @@ cost += items[choice]["price"]
 print(f"Added {items[choice]['name']} into cart")
 
 while True:
-    checkout = (input("Would you like to continue shopping? (Yes/No)"))
-    if checkout == "Yes":
+    checkout = (input("Would you like to continue shopping? (y/n)"))
+    if checkout == "y":
         choice = int(input("What else would you like to buy?"))
         cart.append(items[choice])
         cost += items[choice]["price"]
         print(f"Added {items[choice]['name']} into cart")
-    if checkout == "No":
+    if checkout == "n":
          break
     
 for item in cart: 
